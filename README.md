@@ -9,3 +9,9 @@ This project seeks to erect a library of Credit Card Designs. This platform woul
 HTML, CSS & Javascript
 
 # FrontEnd Contributors
+ - Aderonmu Adeniyi 
+ - Isinkaye Praise 
+ - Ottis Jennifer 
+ - Okeke Onyeka 
+ - Isinwa-Iheme Deborah 
+ - Jacob Joshua
