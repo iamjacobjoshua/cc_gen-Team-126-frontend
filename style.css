@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  color: rgb(79, 13, 34);
+}
+.login-container{
+  margin: 40px 30px;
+  display: flex;
+}
+img{
+  width: 50%;
+}
+.login-info{
+  margin-left: 30px;
+  width: 50%;
+}
+.login-info p{
+  margin: 20px 0px;
+}
+input{
+  margin: 10px 0px;
+  padding: 7px;
+  background-color: rgba(248, 233, 238, 0.3);
+  border: none;
+  width: 100%;
+}
+button{
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(189, 30, 81);
+  color: white;
+  margin: 40px 0px 50px;
+}
+.p{
+  text-align: center;
+  color: black;
+}
+.p a{
+  text-decoration: none;
+}
