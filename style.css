@@ -6,6 +6,9 @@
 body{
   width: 100%;
   color: rgb(79, 13, 34);
+  padding: 40px;
+  background-color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
 }
 .login-container{
   margin: 40px 30px;
@@ -13,32 +16,67 @@ body{
 }
 img{
   width: 50%;
+  filter: brightness(103%);
 }
 .login-info{
   margin-left: 30px;
   width: 50%;
 }
+.login-info h2{
+  font-size: 40px;
+  color: #490B3D;
+  font-weight: 600;
+}
 .login-info p{
   margin: 20px 0px;
+  color: rgba(73, 11, 61, 0.65);
+  font-family: 'Radley', serif;
+  font-size: 24px;
+  font-weight: bold;
 }
 input{
   margin: 10px 0px;
-  padding: 7px;
-  background-color: rgba(248, 233, 238, 0.3);
+  padding: 7px 10px;
+  background-color: #FFF9FE;
+  color: #EEE1E1;
   border: none;
+  border-radius: 5px;
   width: 100%;
+}
+.last-child{
+  margin-bottom: 0px;
 }
 button{
   width: 100%;
   padding: 10px;
-  background-color: rgb(189, 30, 81);
+  background-color: #BD1E51;
   color: white;
-  margin: 40px 0px 50px;
+  margin: 40px 0px 0px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
 }
-.p{
+label{
+  color: rgba(73, 11, 61, 0.6);
+  font-family: 'Radley', serif;
+}
+.login-info .p{
   text-align: center;
-  color: black;
+  color: #000000;
+  font-family: 'Radley', serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 50px;
 }
 .p a{
   text-decoration: none;
+  color: rgba(72, 131, 173, 0.8);
+}
+.small{
+  margin: 0px;
+  position: relative;
+  left: 255px;
+  color: rgba(72, 131, 173, 0.8);
+  font-weight: 400;
+  font-family: 'radley', serif;
 }
