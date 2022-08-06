@@ -1,52 +1,56 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Project_cc-gen</title>
-  <link href="sign.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sign up.css">
 </head>
-
 <body>
-  <main>
-      <div>
-        <h1>Project 
-        <span id="gen">_cc_gen</span>
-       </h1>
-        <p id="_cc">
-          Project_cc-gen helps hundreds of users choose amazing design samples
-        </p>
-      </div>
-      <div>
-        <p>Create your free account</p>
-    </div>
-      <div id="container">
-        <form action="">
-          <label for="email">Email Address</label>
-
-          <input type="email" placeholder="Jane Doe" />
-
-          <label for="password">Password</label>
-
-          <input type="text" placeholder="*******" />
-
-          <div>
-            Have an account?
-            <span><a href="login.html">Sign in.</a></span>
-          </div>
-          <div>
+    <section class="left-side">
+        <h1>Project</h1>
+        <h2>cc_gen</h2>
+        <p class="yellow-border">Project cc-gen helps hundreds of users choose amazing design samples</p>
+    </section>
+    <section class="right-side">
+        <div>
+            <h3>Create your free account</h3>
             <form action="">
-              <input type="checkbox" name="checkbox" id="checkbox" />
-              <label for="terms">I agree to the <span>terms and conditions </span> of
-                Project_cc-gen
-              </label>
+                
+                <div class="name"> 
+                    <div>
+                        <label for="fname">Firstname*</label>
+                        <input class="spc" type="text" id="fname" name="fname" placeholder="Jane">
+                    </div>
+                    
+                    <div>
+                        <label for="lname">Lastname*</label>
+                        <input class="spc" type="text" id="lname" name="lname" placeholder="Doe">
+                    </div>
+                    
+                </div>
+                <div class="em-pss">
+                    <label for="email">Email Address*</label>
+                    <input type="email" id="email" name="email" placeholder="janedoe@gmail.com">
+                    <label for="pword">Password*</label>
+                    <input type="password" id="pword" name="pword" placeholder="*******">
+                </div>
+                <div class="sign_in">
+                    Have an account?
+                    <span>Sign in.</span> 
+                </div>
+                
+                    <input type="checkbox" name="checkbox" id="checkbox" />
+                    <label for="terms">I agree to the <span>terms and conditions </span> of
+                        Project_cc-gen
+                    </label>
+                    <button>Sign Up</button>
+
+                
             </form>
-          </div>
-          <button>Sign Up</button>
-        </form>
-      </div>
-    </main>
-
-
+            <p></p>
+        </div>
+    </section>
+</body>
 </html>
