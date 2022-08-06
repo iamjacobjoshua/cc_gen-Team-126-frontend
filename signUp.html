@@ -1,56 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="signup.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Project cc gen</div>
+        <div class="hmbg"><img src="img/menu.svg" alt="menu" /></div>
+        <ul class="menu-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Library</a></li>
+          <li><a href="">Docs</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Login</a></li>
+          <li id="bg-li"><a href="">Get started for FREE</a></li>
+        </ul>
+      </nav>
+    </header>
     <section class="left-side">
-        <h1>Project</h1>
-        <h2>cc_gen</h2>
-        <p class="yellow-border">Project cc-gen helps hundreds of users choose amazing design samples</p>
+      <h1>Project</h1>
+      <h2>cc_gen</h2>
+      <p class="yellow-border">
+        Project cc-gen helps hundreds of users choose amazing design samples
+      </p>
     </section>
     <section class="right-side">
-        <div>
-            <h3>Create your free account</h3>
-            <form action="">
-                
-                <div class="name"> 
-                    <div>
-                        <label for="fname">Firstname*</label>
-                        <input class="spc" type="text" id="fname" name="fname" placeholder="Jane">
-                    </div>
-                    
-                    <div>
-                        <label for="lname">Lastname*</label>
-                        <input class="spc" type="text" id="lname" name="lname" placeholder="Doe">
-                    </div>
-                    
-                </div>
-                <div class="em-pss">
-                    <label for="email">Email Address*</label>
-                    <input type="email" id="email" name="email" placeholder="janedoe@gmail.com">
-                    <label for="pword">Password*</label>
-                    <input type="password" id="pword" name="pword" placeholder="*******">
-                </div>
-                <div class="sign_in">
-                    Have an account?
-                    <span> <a href="login.html">Sign in.</a></span> 
-                </div>
-                
-                    <input type="checkbox" name="checkbox" id="checkbox" />
-                    <label for="terms">I agree to the <span>terms and conditions </span> of
-                        Project_cc-gen
-                    </label>
-                    <button>Sign Up</button>
+      <div>
+        <h3>Create your free account</h3>
+        <form action="">
+          <div class="name">
+            <div>
+              <label for="fname">Firstname*</label>
+              <input
+                class="spc"
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Jane"
+              />
+            </div>
 
-                
-            </form>
-            <p></p>
-        </div>
+            <div>
+              <label for="lname">Lastname*</label>
+              <input
+                class="spc"
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Doe"
+              />
+            </div>
+          </div>
+          <div class="em-pss">
+            <label for="email">Email Address*</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="janedoe@gmail.com"
+            />
+            <label for="pword">Password*</label>
+            <input
+              type="password"
+              id="pword"
+              name="pword"
+              placeholder="*******"
+            />
+          </div>
+          <div class="sign_in">
+            Have an account?
+            <span> <a href="login.html">Sign in.</a></span>
+          </div>
+
+          <input type="checkbox" name="checkbox" id="checkbox" />
+          <label for="terms"
+            >I agree to the <span>terms and conditions </span> of Project_cc-gen
+          </label>
+          <button>Sign Up</button>
+        </form>
+        <p></p>
+      </div>
     </section>
-</body>
+    <footer>
+      <div class="top-footer">
+        <article class="sect-five">
+          <div class="sf-about">
+            <h2>Project cc_gen</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+              duis facilisis co nvallis magna elementum nibh. Eu mi mi eu neque
+              tortor fermentum. Aliquam ac nibh cons
+            </p>
+          </div>
+          <div>
+            <a href=""
+              ><img src="img/tweet.svg" alt="socials" class="icon"
+            /></a>
+            <a href=""><img src="img/fb.svg" alt="socials" class="icon" /></a>
+            <a href=""
+              ><img src="img/insta.svg" alt="socials" class="icon"
+            /></a>
+          </div>
+        </article>
+        <article class="sect-six">
+          <div>
+            <h3>Links</h3>
+            <ul class="foot-list">
+              <li><a href="">Designs</a></li>
+              <li><a href="">Docs</a></li>
+              <li><a href="">Support</a></li>
+              <li><a href="">Get Started</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Others</h3>
+            <ul class="foot-list">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div>
+        <span class="footer-CR"
+          >&copy;2022 Project cc_gen. All rights reserved</span
+        >
+      </div>
+    </footer>
+  </body>
 </html>

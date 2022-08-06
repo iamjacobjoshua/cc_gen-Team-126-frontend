@@ -1,46 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Radley&display=swap" rel="stylesheet">
-  <title>Proj CC_Gen Team 126</title>
-  
-  <!-- HTML -->
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Proj CC_Gen Team 126</title>
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
-</head>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="login.css" />
+  </head>
 
-<body>
-  <header>
-    
-  </header>
-  <main>
-    <div class="login-container">
-      <img src="login-image.jpg" alt="pic">
-      <div class="login-info">
-        <h2>Welcome back,</h2>
-        <p>Sign in to continue</p>
-        <form>
-          <label for="email">Email Address</label><br>
-          <input required type="email" placeholder="Jane Doe" id="email"><br>
-          <label for="password">Password</label><br>
-          <input required type="password" placeholder="*******"><br>
-          <a class="small">forgot password?</a>
-          <button type="submit">Sign in</button>
-        </form>
-        <p class="p">Don't have an account? <a href="signUp.html">sign up</a></p>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Project cc gen</div>
+        <div class="hmbg"><img src="img/menu.svg" alt="menu" /></div>
+        <ul class="menu-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Library</a></li>
+          <li><a href="">Docs</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Login</a></li>
+          <li id="bg-li"><a href="">Get started for FREE</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="login-container">
+        <img src="img/login.svg" alt="pic" />
+        <div class="login-info">
+          <h2>Welcome back,</h2>
+          <p>Sign in to continue</p>
+          <form>
+            <label for="email">Email Address</label><br />
+            <input
+              required
+              type="email"
+              placeholder="Jane Doe"
+              id="email"
+            /><br />
+            <label for="password">Password</label><br />
+            <input required type="password" placeholder="*******" /><br />
+            <a class="small">forgot password?</a>
+            <button type="submit">Sign in</button>
+          </form>
+          <p class="p">
+            Don't have an account? <a href="signUp.html">sign up</a>
+          </p>
+        </div>
       </div>
-    </div>
-  </main>
-  <footer>
-    
-  </footer>
-  <script src="main.js"></script>
-</body>
+    </main>
+    <footer>
+      <div class="top-footer">
+        <article class="sect-five">
+          <div class="sf-about">
+            <h2>Project cc_gen</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+              duis facilisis co nvallis magna elementum nibh. Eu mi mi eu neque
+              tortor fermentum. Aliquam ac nibh cons
+            </p>
+          </div>
+          <div>
+            <a href=""
+              ><img src="img/tweet.svg" alt="socials" class="icon"
+            /></a>
+            <a href=""><img src="img/fb.svg" alt="socials" class="icon" /></a>
+            <a href=""
+              ><img src="img/insta.svg" alt="socials" class="icon"
+            /></a>
+          </div>
+        </article>
+        <article class="sect-six">
+          <div>
+            <h3>Links</h3>
+            <ul class="foot-list">
+              <li><a href="">Designs</a></li>
+              <li><a href="">Docs</a></li>
+              <li><a href="">Support</a></li>
+              <li><a href="">Get Started</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Others</h3>
+            <ul class="foot-list">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div>
+        <span class="footer-CR"
+          >&copy;2022 Project cc_gen. All rights reserved</span
+        >
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>

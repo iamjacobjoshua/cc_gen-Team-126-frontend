@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Manrope&family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+:root {
+  --pry-col: hsla(341, 73%, 43%, 1);
+  --sec-col: hsla(331, 73%, 26%, 1);
+  --white-col: #fff;
+  --faded-pink: hsla(341, 55%, 89%, 0.15);
+  --border-rad: 0.25rem;
+  --boxShadow: 0 1px 6px 0 rgba(215, 215, 216, 0.28);
+}
+.menu-list {
+  display: none;
+}
+header {
+  min-height: 10vh;
+  min-width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--boxShadow);
+}
+nav {
+  min-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: var(--sec-col);
+}
+.hmbg{
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  background: var(--sec-col);
+  color: var(--white-col);
+}
+.top-footer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 0;
+  font-size: small;
+}
+.sect-five {
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.sect-five > div {
+  display: flex;
+  gap: 1rem;
+}
+.sf-about {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.sf-about > h2,
+.sect-six > div > h3 {
+  font-family: "Inter", sans-serif;
+}
+.sf-about > p {
+  line-height: 1.75;
+}
+.sect-six {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.foot-list > li > a {
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: var(--white-col);
+}
+.footer-CR {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 700px) {
+  .hmbg {
+    display: none;
+  }
+  .menu-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-weight: bold;
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+  .menu-list > li > a {
+    color: black;
+    font-family: "Inter", sans-serif;
+  }
+  a:active {
+    border-bottom: .15rem solid var(--pry-col);
+  }
+  #bg-li {
+    background-color: var(--pry-col);
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-rad);
+  }
+  #bg-li > a {
+    color: var(--white-col);
+  }
+  .top-footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .sect-five {
+    max-width: 36%;
+  }
+  .sect-six {
+    justify-content: space-evenly;
+  }
+  .footer-about {
+    max-width: 76%;
+  }
+}
