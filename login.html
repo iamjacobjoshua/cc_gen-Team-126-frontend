@@ -12,7 +12,11 @@
   <body>
     <header>
       <nav>
-        <div class="logo">Project </br> <span id="gen">cc_gen</span></div>
+        <div class="logo">
+          <a href="index.html">
+            <span class="proj">Project<br /><span class="gen">cc_gen</span></span>  
+          </a> 
+        </div>
         <div class="hmbg"><img src="img/menu.svg" alt="menu" /></div>
         <ul class="menu-list">
           <li><a href="index.html">Home</a></li>
@@ -21,18 +25,17 @@
           <li><a href="">About</a></li>
           <li><a href="login.html">Login</a></li>
 
-          <li id="bg-li"><a href="signUp.html">Get started for FREE</a></li>
+          <li id="bg-li"><a href="signup.html">Get started for FREE</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="login-container">
         <img src="img/login.svg" alt="illustration" id="vec-grahic"/>
-
         <div class="login-info">
           <h2>Welcome back,</h2>
           <p>Sign in to continue</p>
-          <form>
+          <form action="submit">
             <label for="email">Email Address</label>
             <input
               required
@@ -42,10 +45,10 @@
             />
             <label for="password">Password</label>
             <input required type="password" placeholder="********" />
-            <a id="forgot">forgot password?</a>
+            <a href="#" id="forgot">forgot password?</a>
             <button type="submit">Sign in</button>
           </form>
-          <span>Don't have an account? <a href="signUp.html">sign up</a></span> 
+          <span class="cta">Don't have an account? <a href="signup.html">sign up</a></span> 
         </div>
       </div>
     </main>
@@ -77,7 +80,7 @@
               <li><a href="">Designs</a></li>
               <li><a href="">Docs</a></li>
               <li><a href="">Support</a></li>
-              <li><a href="signUp.html">Get Started</a></li>
+              <li><a href="signup.html">Get Started</a></li>
             </ul>
           </div>
           <div>
@@ -90,11 +93,10 @@
         </article>
       </div>
       <div>
-        <span class="footer-CR"
-          >&copy;2022 Project cc_gen. All rights reserved</span
-        >
+        <span class="footer-CR">&copy;2022 Project cc_gen. All rights reserved</span>
       </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="script/main.js"></script>
+    <script src="script/login.js"></script>
   </body>
 </html>

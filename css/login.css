@@ -22,21 +22,6 @@
   color: var(--sec2-col);
   font-weight: bold;
 }
-form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1.25rem;
-  gap: 1rem;
-}
-input {
-  border: solid .1rem var(--faded-pink);
-  background: var(--faded-pink);
-  padding: 0.75rem;
-  border-radius: var(--border-rad);
-}
-input:focus {
-  outline-color: var(--pry-col);
-}
 #forgot {
   text-align: right;
   color: var(--blue);
@@ -51,18 +36,7 @@ button {
   color: var(--white-col);
   box-shadow: var(--boxShadow);
 }
-label {
-  color: var(--faded-sec2-col);
-  font-family: "Inter", sans-serif;
-}
-span {
-  margin-top: 1rem;
-  text-align: center;
-  font-size: 0.75rem;
-}
-span > a {
-  color: var(--blue);
-}
+
 @media (min-width: 700px) {
   .login-container {
     padding: 6rem 0;
@@ -74,8 +48,5 @@ span > a {
   }
   .login-info {
     min-width: 40%;
-  }
-  span {
-    margin-top: 2rem;
   }
 }

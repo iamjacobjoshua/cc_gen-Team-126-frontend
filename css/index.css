@@ -50,9 +50,6 @@ button {
   color: var(--white-col);
   box-shadow: var(--boxShadow);
 }
-button:hover {
-  background: var(--sec-col);
-}
 .svg-img,
 .hero-img,
 .home-img {
