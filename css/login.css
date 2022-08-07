@@ -29,9 +29,13 @@ form {
   gap: 1rem;
 }
 input {
-  border: none;
+  border: solid .1rem var(--faded-pink);
   background: var(--faded-pink);
   padding: 0.75rem;
+  border-radius: var(--border-rad);
+}
+input:focus {
+  outline-color: var(--pry-col);
 }
 #forgot {
   text-align: right;
