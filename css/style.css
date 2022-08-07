@@ -11,10 +11,24 @@
 :root {
   --pry-col: hsla(341, 73%, 43%, 1);
   --sec-col: hsla(331, 73%, 26%, 1);
-  --white-col: #fff;
+  --sec2-col: hsl(312, 74%, 16%);
+  --faded-sec2-col: hsla(312, 74%, 16%, 0.6);
+  --white-col: hsl(0, 0%, 100%);
   --faded-pink: hsla(341, 55%, 89%, 0.15);
   --border-rad: 0.25rem;
-  --boxShadow: 0 1px 6px 0 rgba(215, 215, 216, 0.28);
+  --boxShadow: 0 0.1rem 0.25rem 0 hsla(240, 1%, 85%, 0.28);
+  --blue: hsl(205, 41%, 48%);
+}
+body {
+  max-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
 }
 .menu-list {
   display: none;
@@ -35,8 +49,14 @@ nav {
 }
 .logo {
   color: var(--sec-col);
+  font-weight: bold;
 }
-.hmbg{
+#gen {
+  color: var(--pry-col);
+}
+.hmbg,
+a,
+button {
   cursor: pointer;
 }
 footer {
@@ -63,12 +83,12 @@ article {
   padding: 1.5rem 0;
   font-size: small;
 }
-.sect-five {
+#sect-five {
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
 }
-.sect-five > div {
+#sect-five > div {
   display: flex;
   gap: 1rem;
 }
@@ -78,13 +98,13 @@ article {
   gap: 0.5rem;
 }
 .sf-about > h2,
-.sect-six > div > h3 {
+#sect-six > div > h3 {
   font-family: "Inter", sans-serif;
 }
 .sf-about > p {
   line-height: 1.75;
 }
-.sect-six {
+#sect-six {
   flex-direction: row;
   justify-content: space-between;
 }
@@ -114,12 +134,13 @@ article {
     font-family: "Inter", sans-serif;
   }
   a:active {
-    border-bottom: .15rem solid var(--pry-col);
+    border-bottom: 0.15rem solid var(--pry-col);
   }
   #bg-li {
     background-color: var(--pry-col);
     padding: 0.75rem 1rem;
     border-radius: var(--border-rad);
+    box-shadow: var(--boxShadow);
   }
   #bg-li > a {
     color: var(--white-col);
@@ -130,10 +151,10 @@ article {
     align-items: flex-start;
     gap: 2rem;
   }
-  .sect-five {
+  #sect-five {
     max-width: 36%;
   }
-  .sect-six {
+  #sect-six {
     justify-content: space-evenly;
   }
   .footer-about {

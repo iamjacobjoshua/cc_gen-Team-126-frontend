@@ -5,55 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Proj CC_Gen Team 126</title>
-
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Login</title>
   </head>
 
   <body>
     <header>
       <nav>
-        <div class="logo">Project cc gen</div>
+        <div class="logo">Project </br> <span id="gen">cc_gen</span></div>
         <div class="hmbg"><img src="img/menu.svg" alt="menu" /></div>
         <ul class="menu-list">
-          <li><a href="">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="">Library</a></li>
           <li><a href="">Docs</a></li>
           <li><a href="">About</a></li>
-          <li><a href="">Login</a></li>
-          <li id="bg-li"><a href="">Get started for FREE</a></li>
+          <li><a href="login.html">Login</a></li>
+
+          <li id="bg-li"><a href="signUp.html">Get started for FREE</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="login-container">
-        <img src="img/login.svg" alt="pic" />
+        <img src="img/login.svg" alt="illustration" id="vec-grahic"/>
+
         <div class="login-info">
           <h2>Welcome back,</h2>
           <p>Sign in to continue</p>
           <form>
-            <label for="email">Email Address</label><br />
+            <label for="email">Email Address</label>
             <input
               required
               type="email"
-              placeholder="Jane Doe"
+              placeholder="janedoe@example.com"
               id="email"
-            /><br />
-            <label for="password">Password</label><br />
-            <input required type="password" placeholder="*******" /><br />
-            <a class="small">forgot password?</a>
+            />
+            <label for="password">Password</label>
+            <input required type="password" placeholder="********" />
+            <a id="forgot">forgot password?</a>
             <button type="submit">Sign in</button>
           </form>
-          <p class="p">
-            Don't have an account? <a href="signUp.html">sign up</a>
-          </p>
+          <span>Don't have an account? <a href="signUp.html">sign up</a></span> 
         </div>
       </div>
     </main>
     <footer>
       <div class="top-footer">
-        <article class="sect-five">
+        <article id="sect-five">
           <div class="sf-about">
             <h2>Project cc_gen</h2>
             <p>
@@ -72,7 +70,7 @@
             /></a>
           </div>
         </article>
-        <article class="sect-six">
+        <article id="sect-six">
           <div>
             <h3>Links</h3>
             <ul class="foot-list">

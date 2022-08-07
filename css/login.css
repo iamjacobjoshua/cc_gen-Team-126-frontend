@@ -1,82 +1,77 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body{
-  width: 100%;
-  color: rgb(79, 13, 34);
-  padding: 40px;
-  background-color: #FFFFFF;
-  font-family: 'Montserrat', sans-serif;
-}
-.login-container{
-  margin: 40px 30px;
+.login-container {
+  width: 90%;
   display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+  margin: auto;
+  gap: 0.75rem;
 }
-img{
-  width: 50%;
-  filter: brightness(103%);
+#vec-grahic {
+  align-self: center;
+  max-width: 60%;
 }
-.login-info{
-  margin-left: 30px;
-  width: 50%;
+.login-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-.login-info h2{
-  font-size: 40px;
-  color: #490B3D;
-  font-weight: 600;
+.login-info > h2 {
+  color: var(--sec2-col);
 }
-.login-info p{
-  margin: 20px 0px;
-  color: rgba(73, 11, 61, 0.65);
-  font-family: 'Radley', serif;
-  font-size: 24px;
+.login-info > p {
+  color: var(--sec2-col);
   font-weight: bold;
 }
-input{
-  margin: 10px 0px;
-  padding: 7px 10px;
-  background-color: #FFF9FE;
-  color: #EEE1E1;
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.25rem;
+  gap: 1rem;
+}
+input {
   border: none;
-  border-radius: 5px;
-  width: 100%;
+  background: var(--faded-pink);
+  padding: 0.75rem;
 }
-.last-child{
-  margin-bottom: 0px;
+#forgot {
+  text-align: right;
+  color: var(--blue);
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
 }
-button{
-  width: 100%;
-  padding: 10px;
-  background-color: #BD1E51;
-  color: white;
-  margin: 40px 0px 0px;
+button {
+  min-height: 2.5rem;
   border: none;
-  border-radius: 5px;
-  font-weight: 700;
+  border-radius: var(--border-rad);
+  background: var(--pry-col);
+  color: var(--white-col);
+  box-shadow: var(--boxShadow);
 }
-label{
-  color: rgba(73, 11, 61, 0.6);
-  font-family: 'Radley', serif;
+label {
+  color: var(--faded-sec2-col);
+  font-family: "Inter", sans-serif;
 }
-.login-info .p{
+span {
+  margin-top: 1rem;
   text-align: center;
-  color: #000000;
-  font-family: 'Radley', serif;
-  font-weight: 400;
-  font-size: 14px;
-  margin-top: 50px;
+  font-size: 0.75rem;
 }
-.p a{
-  text-decoration: none;
-  color: rgba(72, 131, 173, 0.8);
+span > a {
+  color: var(--blue);
 }
-.small{
-  margin: 0px;
-  position: relative;
-  left: 255px;
-  color: rgba(72, 131, 173, 0.8);
-  font-weight: 400;
-  font-family: 'radley', serif;
+@media (min-width: 700px) {
+  .login-container {
+    padding: 6rem 0;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #vec-grahic {
+    max-width: 30%;
+  }
+  .login-info {
+    min-width: 40%;
+  }
+  span {
+    margin-top: 2rem;
+  }
 }
