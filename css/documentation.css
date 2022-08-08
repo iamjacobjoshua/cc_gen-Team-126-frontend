@@ -38,7 +38,6 @@ main{
   padding-bottom: 3rem;
 }
 .sec2-info{
-  font-family: 'Radley', serif;
   display: flex;
   flex-direction: column;
   gap: 6.5rem;
@@ -67,15 +66,17 @@ footer .footer{
   padding: 5rem 0 2rem;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 4rem;
-  font-family: 'Radley', serif;
 }
 .footer-first{
   width: 90%;
   margin: auto;
 }
 .footer-second, .footer-third, .footer-fourth{
-  padding-left: 5rem;
+  width: 70%;
+  margin: 0 auto;
+  /*padding-left: 5rem;*/
   line-height: 2.5rem;
 }
 .footer-second h4, .footer-third h4, .footer-fourth h4{
@@ -128,9 +129,12 @@ footer .footer{
     background-color: #F2D2DC;
     flex-direction: row;
     justify-content: space-around;
-    
+    align-items: flex-start;
+    padding-left: 1.5rem; 
   }
   .footer-second, .footer-third, .footer-fourth{
     padding: 0rem;
+    width: 100%;
   }
+  
 }
