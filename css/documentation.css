@@ -15,7 +15,7 @@ main{
 .ladyimg{
   width: 80%;
 }
-.search{
+.search, .header-menu{
   display: none;
 }
 .section1{
@@ -89,8 +89,14 @@ footer .footer{
   main{
     padding-top: 8rem;
   }
-  .header-menu > li:last-child{
+  .search, .header-menu a{
+    color: #050505;
+  }
+  .header-menu > li:last-child a{
     color: #FFFFFF;
+    border: 1px solid var(--purple-700);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
   }
   .ladyimg{
     max-width: 10%;
@@ -102,10 +108,11 @@ footer .footer{
   .search input{
     background-color: white;
     padding-left: 2rem;
+    width: 20rem;
   }
   .search i{
     position: absolute;
-    color: #D9D9D9;
+    color: var(--purple-700);
     top: 13px;
     left: 5px;
   }
@@ -124,6 +131,6 @@ footer .footer{
     
   }
   .footer-second, .footer-third, .footer-fourth{
-    padding-left: 0rem;
+    padding: 0rem;
   }
 }
