@@ -1,0 +1,98 @@
+button {
+  min-height: 2.5rem;
+  border: none;
+  border-radius: var(--border-rad);
+  background: var(--pry-col);
+  color: var(--white-col);
+  box-shadow: var(--boxShadow);
+}
+
+button:focus{
+  outline: none;
+
+}
+
+#btn1 {
+  min-height: 2.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #BD1E51;
+  color: var(--white-col);
+  box-shadow: var(--boxShadow);
+  width: 30%;
+  padding: 1.2rem;
+  color: white;
+  margin: 40px 0px 0px;
+  font-weight: 700;
+     
+
+}
+
+#btn2 {
+  min-height: 2.5rem;
+  border: none;
+  border-radius: 8px;
+  background:  #7E1436;
+  color: var(--white-col);
+  box-shadow: var(--boxShadow);
+  width: 30%;
+  padding: 1.2rem;
+  color: white;
+  margin: 40px 0px 0px;
+  font-weight: 700
+  
+}
+
+
+.wel-come {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+color: #7E1436;
+text-align: left;
+padding: initial;
+margin: initial;
+
+}
+
+p { 
+
+font-family: 'Radley';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 1rem;
+color: #0F020C;
+margin: 1rem;
+padding: auto;
+}
+
+
+.btn-group button {
+  
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 24px;
+gap: 8px;
+background:#3F0A1B;
+border-radius: 10px;
+width: 245px;
+height: 19px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+text-align: right;
+color: #FEECD9;
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 50px; left: auto;
+}
+
+
