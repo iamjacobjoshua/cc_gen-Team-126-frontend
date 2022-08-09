@@ -158,7 +158,7 @@ article {
   .hmbg {
     display: none;
   }
-  .menu-list {
+  .menu-list, .header-menu {
     display: flex;
     align-items: center;
     gap: 2rem;
