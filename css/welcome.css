@@ -5,6 +5,7 @@ button {
   background: var(--pry-col);
   color: var(--white-col);
   box-shadow: var(--boxShadow);
+  
 }
 
 button:focus{
@@ -45,13 +46,12 @@ button:focus{
 
 
 .wel-come {
-font-family: 'Montserrat';
+font-family: "Inter", sans-serif
 font-style: normal;
 font-weight: 700;
 font-size: 40px;
 line-height: 48px;
 color: #7E1436;
-text-align: left;
 padding: initial;
 margin: initial;
 
@@ -59,7 +59,7 @@ margin: initial;
 
 p { 
 
-font-family: 'Radley';
+font-family: "Inter", sans-serif
 font-style: normal;
 font-weight: 400;
 font-size: 24px;
@@ -67,11 +67,12 @@ line-height: 1rem;
 color: #0F020C;
 margin: 1rem;
 padding: auto;
+
+
 }
 
 
 .btn-group button {
-  
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -82,17 +83,19 @@ background:#3F0A1B;
 border-radius: 10px;
 width: 245px;
 height: 19px;
-font-family: 'Montserrat';
+font-family: "Inter", sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 18px;
 line-height: 20px;
 text-align: right;
 color: #FEECD9;
-flex: none;
-order: 0;
-flex-grow: 0;
 margin: 50px; left: auto;
+
 }
 
+.middle {
 
+    text-align: center;
+    
+}
