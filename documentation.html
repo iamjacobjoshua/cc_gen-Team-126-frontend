@@ -14,21 +14,22 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <nav>
       <div>
         <a href="documentation.html">
           <span class="top-logo">Cc_Gen</span><br><span class="bottom-logo">Docs</span>
         </a>
       </div>
-      <div>
+      <div onclick="openSideNav()">
         <img class="hmbg" src="img/menu.svg" alt="menu">
       </div>
       <div class="search">
         <i class="fa-solid fa-magnifying-glass"></i>
         <input type="text" placeholder="Search">
       </div>
-      <ul class="header-menu">
+      <ul class="header-menu" id="mySideNav">
+        <li class="close-click" onclick="closeSideNav()" style="font-size: 4rem">&times;</li>
         <li><a href="documentation.html">Documentation</a></li>
         <li><a href="login.html">Login</a></li>
         <li class="header-button"><a href="signup.html">Get started for FREE</a></li>
@@ -62,7 +63,7 @@
           <p>Access to pre-build credit card designs for easy integration into your websites or apps.</p>
         </div>
       </div>
-      <a href="">
+      <a href="doc1.html">
         <button>Get started  ></button>
       </a>
     </div>
@@ -98,6 +99,7 @@
       </div>
     </div>
   </footer>
+  <script src="script/main.js"></script>
 </body>
 
 </html>
