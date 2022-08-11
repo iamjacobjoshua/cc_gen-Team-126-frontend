@@ -1,36 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Manrope&family=Montserrat:wght@400;700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Radley", "Montserrat", sans-serif;
-  text-decoration: none;
-  list-style: none;
-}
-
-:root {
-  --pry-col: hsla(341, 73%, 43%, 1);
-  --faded-pry-col: hsla(341, 73%, 43%, 0.2);
-  --purple-700: #3d0933;
-  --sec-col: hsla(331, 73%, 26%, 1);
-  --sec2-col: hsl(312, 74%, 16%);
-  --faded-sec2-col: hsla(312, 74%, 16%, 0.6);
-  --white-col: hsl(0, 0%, 100%);
-  --faded-pink: hsla(341, 55%, 89%, 0.15);
-  --gold-col: hsl(45, 88%, 59%);
-  --border-rad: 0.25rem;
-  --boxShadow: 0 0.1rem 0.25rem 0 hsla(240, 1%, 85%, 0.28);
-  --blue: hsl(205, 41%, 48%);
-}
-
-body {
-  max-width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .content-1 {
   width: inherit;
   background: linear-gradient(
@@ -51,7 +18,6 @@ body {
   position: absolute;
   padding-top: 100px;
 }
-
 .txt {
   position: absolute;
   top: 55%;
@@ -60,22 +26,17 @@ body {
   padding: 50px;
   margin: 2rem;
 }
-
-
 h1 {
   font-size: 2.55rem;
 }
-
 #custom-txt {
   color: var(--gold-col);
   font-family: "Montserrat" ;
 }
-
 #virtual-txt {
   color: var(--pry-col);
   font-family: "Montserrat";
 }
-
 article > div > h2 {
   font-family: "Montserrat", sans-serif;
 }
@@ -83,7 +44,6 @@ article > div > h2 {
   padding-top: 50px;
   padding-left: 100px;
 }
-
 .white {
   padding-top: 90px;
 }
@@ -93,7 +53,6 @@ article > div > h2 {
   position: absolute;
   z-index: 0;
 }
-
 .content-1 p {
   padding-top: 10px;
   padding-bottom: 100px;
@@ -102,7 +61,6 @@ article > div > h2 {
   color: var(--purple-700);
   font-weight: 600;
 }
-
 .content-2 {
   display: flex;
   flex-direction: row;
@@ -112,13 +70,11 @@ article > div > h2 {
   font-size: 16px;
   line-height: 20px;
 }
-
 .content-2-img {
   display: flex;
   flex-direction: row;
   padding-left: 50px;
 }
-
 .about {
   padding: 50px 50px 0px 150px;
 }
@@ -129,7 +85,6 @@ article > div > h2 {
 .about p {
   padding: 50px 100px 90px 0px;
 }
-
 button .about-button {
   background-color: var(--pry-col);
   padding: 10px 15px;
