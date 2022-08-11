@@ -36,6 +36,9 @@ main {
 .menu-list {
   display: none;
 }
+.search{
+  display: none;
+}
 header {
   min-height: 10vh;
   min-width: inherit;
@@ -43,6 +46,19 @@ header {
   justify-content: center;
   align-items: center;
   box-shadow: var(--boxShadow);
+}
+.top-logo{
+  color: var(--purple-700);
+  font-weight: bold;
+  font-size: 24px;
+}
+.bottom-logo{
+  color: var(--pry-col);
+  font-weight: bold;
+  font-size: 24px;
+}
+.ladyimg{
+  width: 80%;
 }
 nav {
   min-width: 90%;
@@ -154,17 +170,57 @@ article {
   font-size: 0.75rem;
 }
 
+#mySideNav{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  padding-top: 3rem;
+  transition: 0.5s;
+}
+#mySideNav a {
+  /*padding: 8px 8px 8px 32px;*/
+  text-decoration: none;
+  font-size: 1rem;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
 @media (min-width: 700px) {
   .hmbg {
     display: none;
   }
-  .menu-list {
+  .menu-list, .header-menu {
     display: flex;
     align-items: center;
     gap: 2rem;
     font-weight: bold;
     font-size: 0.95rem;
     cursor: pointer;
+  }
+  #mySideNav{
+    width: 60%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    /*top: 0;
+    right: 0;*/
+    background-color: #F2D2DC;
+    overflow-x: hidden;
+    padding-top: 0;
+    transition: 0.5s;
+  }
+  .close-click{
+    display: none;
   }
   .menu-list > li > a {
     color: black;
@@ -200,6 +256,32 @@ article {
   .footer-about {
     max-width: 76%;
   }
-  
+  .header {
+    background-color: #F2D2DC;
+  }
+  .search, .header-menu a{
+    color: #050505;
+  }
+  .header-menu > li:last-child a{
+    color: #FFFFFF;
+    border: 1px solid var(--purple-700);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+  }
+  .search {
+    display: block;
+    position: relative;
+  }
+  .search input{
+    background-color: white;
+    padding-left: 2rem;
+    width: 20rem;
+  }
+  .search i{
+    position: absolute;
+    color: var(--purple-700);
+    top: 13px;
+    left: 5px;
+  }
 
-
+}

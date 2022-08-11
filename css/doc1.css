@@ -1,0 +1,100 @@
+.section1{
+  padding: 2rem 0;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--sec2-col);
+}
+.sec1-info{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+}
+#sec2-1, #sec2-2, #sec2-3, #sec2-4, #sec2-5{
+  display: none;
+}
+.dropdown-menu{
+  display: none;
+  width: 80%;
+  margin: auto;
+  font-size: 14px;
+  line-height: 2.5rem;
+}
+.dropdown-menu p:focus{
+  color: var(--pry-col);
+  
+}
+.section2{
+  width: 90%;
+  margin: auto;
+  font-size: 14px;
+  padding: 3rem 0 2rem;
+}
+.part2 ol li{
+  list-style-type: decimal;
+  width: 90%;
+  margin: auto;
+}
+.section2 h4{
+  width: 85%;
+  margin: auto;
+  padding-bottom: 3rem;
+  font-size: 22px;
+  color: var(--sec2-col);
+}
+.section3{
+  line-height: 3rem;
+  width: 90%;
+  margin: auto;
+  color: var(--sec2-col);
+  padding-bottom: 5rem;
+}
+.sec3-info{
+  display: flex;
+  justify-content: space-between;
+}
+.section3 button{
+  color: white;
+  background-color: var(--pry-col);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.download-info button{
+  display: block;
+  margin: auto;
+}
+span{
+  color: var(--pry-col);
+}
+.download-info{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 700px) {
+  /*main{
+    display: flex;
+    flex-direction: row;
+  }*/
+  .section1{
+    width: 30%;
+    position: fixed;
+  }
+  .part2{
+    width: 90%;
+    padding-left: 35%;
+  }
+  .sec3-info{
+    justify-content: flex-start;
+  }
+  .download-info{
+    flex-direction: row;
+    
+  }
+  .sec3-info p, .download-info p{
+    padding-right: 0.5rem;
+  }
+}

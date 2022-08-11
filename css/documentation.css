@@ -1,0 +1,143 @@
+main{
+  background-color: var(--purple-700);
+  color: #FFFFFF;
+}
+/*.top-logo{
+  color: var(--purple-700);
+  font-weight: bold;
+  font-size: 24px;
+}
+.bottom-logo{
+  color: var(--pry-col);
+  font-weight: bold;
+  font-size: 24px;
+}*/
+.ladyimg{
+  width: 50%;
+}
+/*.search, .header-menu{
+  display: none;
+}*/
+.section1{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 1.5rem 0 3rem;
+}
+.doc-info h2{
+  padding: 1.8rem 0 3.5rem;
+}
+.section2{
+  width: 80%;
+  margin: auto;
+  padding-bottom: 7rem;
+}
+.section2 h2{
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.sec2-info{
+  display: flex;
+  flex-direction: column;
+  gap: 6.5rem;
+}
+.design h3{
+  padding: 0.6rem 0 0.4rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.section2 button{
+  background-color: var(--pry-col);
+  border: none;
+  border-radius: 5px;
+  color: var(--white-col);
+  padding: 1rem 1.5rem;
+  display: block;
+  margin: auto;
+  margin-top: 4rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Montserrat' , sans-serif;
+}
+footer .footer{
+  background-color: white;
+  color: var(--purple-700);
+  width: 100%;
+  padding: 5rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4rem;
+}
+.footer-first{
+  width: 90%;
+  margin: auto;
+}
+.footer-second, .footer-third, .footer-fourth{
+  width: 70%;
+  margin: 0 auto;
+  /*padding-left: 5rem;*/
+  line-height: 2.5rem;
+}
+.footer-second h4, .footer-third h4, .footer-fourth h4{
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width:700px) {
+  header{
+    background-color: #F2D2DC;
+  }
+  main{
+    padding-top: 8rem;
+  }
+  /*.search, .header-menu a{
+    color: #050505;
+  }
+  .header-menu > li:last-child a{
+    color: #FFFFFF;
+    border: 1px solid var(--purple-700);
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+  }*/
+  .doc-info{
+    width: 40%;
+  }
+  .ladyimg{
+    max-width: 10%;
+  }
+  /*.search{
+    display: block;
+    position: relative;
+  }
+  .search input{
+    background-color: white;
+    padding-left: 2rem;
+    width: 20rem;
+  }
+  .search i{
+    position: absolute;
+    color: var(--purple-700);
+    top: 13px;
+    left: 5px;
+  }*/
+  .section1{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .sec2-info{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer .footer{
+    background-color: #F2D2DC;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 1.5rem; 
+  }
+  .footer-second, .footer-third, .footer-fourth{
+    padding: 0rem;
+    width: 100%;
+  }
+  
+}
