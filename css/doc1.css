@@ -38,9 +38,8 @@
 }
 .section2 h4{
   width: 85%;
-  margin: auto;
   padding-bottom: 3rem;
-  font-size: 22px;
+  font-size: 1.75rem;
   color: var(--sec2-col);
 }
 .section3{
