@@ -82,7 +82,9 @@ footer .footer{
 .footer-second h4, .footer-third h4, .footer-fourth h4{
   font-family: 'Montserrat', sans-serif;
 }
-
+.footer-fourth a{
+  color: var(--purple-700)
+}
 @media (min-width:700px) {
   header{
     background-color: #F2D2DC;
