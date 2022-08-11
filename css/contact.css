@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.div1{
+    width: 40rem ;
+    padding-left: 5rem;
+}
+.support{
+    border-bottom: 2px solid rgba(205, 12, 12, 0.97)!important;
+    padding-bottom: 15px;
+    width: 9%;
+    color:  #5e084d;
+    padding-top: 50px;
+}
+.mainbox{
+    margin:auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+input{
+    width: 40rem;
+    
+}
+textarea{
+    width: 40rem;
+    border: none;
+    background-color: #c870b616;
+}
+.texttings{
+    padding:20px 0px 0px 10px;
+}
+.btnsub{
+    margin-top: 10px;
+    width: 40rem;
+    color: white;
+    background-color:rgba(205, 12, 12, 0.97);
+}
+.pp{
+    padding-top: 15px;
+}
+h5{
+    color: #5e084dac;
+    margin: 10px;
+}
+@media only screen and (max-width: 768px) {
+  input{
+    width: 20rem;
+    height: 2rem;
+  }
+  textarea{
+    width: 20rem;
+    border: none;
+    background-color: #c870b616;
+}
+.btnsub{
+    margin-top: 10px;
+    width: 20rem;
+    color: white;
+    background-color:rgba(205, 12, 12, 0.97);
+}
+.div2{
+    width: 20rem ;
+    margin-left: 8rem;
+    margin-top: 40px;
+    
+}
+.div1{
+    width: 40rem ;
+    margin-top: 20px;
+    margin-left: 3rem;
+}
+}
