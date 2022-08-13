@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
 *,
 *:before,
 *:after {
@@ -83,15 +85,17 @@ h1 {
 }
 
 .card-details--info {
+  display: none;
 	padding-top: 0.65rem;
 	border-top: 0.185rem rgb(61, 9, 51) solid;
+  transition: all 0.45s ease-in-out;
 }
 
 .card--details h3{
   color: rgb(61, 9, 51);
 }
 
-.card--details p {
+.details--edit-text{
   margin-top: 0;
   padding: 1rem;
   border: 0.185rem rgb(61, 9, 51) solid;
@@ -99,9 +103,10 @@ h1 {
   text-align: center;
   color: rgb(189, 30, 81);
   transition: all 0.45s ease-in-out;
+  cursor: pointer;
 }
 
-.card--details p:hover {
+.details--edit-text:hover {
   font-weight: 600;
   border: none;
   color:rgb(255, 255, 255);
@@ -147,6 +152,14 @@ h1 {
 	font-weight: 600;
 	color: rgb(189, 30, 81);
 	background: none;
+}
+
+.colour--picker {
+	margin: 0 auto;
+  padding: 0.5rem 1rem 1rem;
+  display: none;
+	grid-template-columns: repeat(3, 1fr);	
+	gap: 1rem;
 }
 
 .card--design {
@@ -258,7 +271,7 @@ h1 {
 .credit-card--expiry,
 .credit-card--logo {
   position: absolute;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier Prime', monospace;
   font-weight: 700;
 }
 
@@ -355,13 +368,6 @@ h1 {
   width: 1.75rem;
 }
 
-
-
-
-
-.colour--pick {
-  display: flex;
-}
 
 .colour--pick img {
 	margin: -0.1rem 1rem;
