@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Page &mdash; Edit Page Here</title>
     <link rel="stylesheet" href="../css/edit-design.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,10 +23,10 @@
             <aside class="card--details">
                 <h3>CREDIT CARD</h3>
                 <div>
-                    <div>
-                        <p>Change Card Details</p>
+                    <div class="details--edit" onclick="showHideDetails()">
+                        <p class="details--edit-text">Change Card Details</p>
                     </div>
-                    <div class="card-details--info">
+                    <div class="card-details--info" id="cardDetails">
                         <form action="">
                             <div class="card--number" id="cardNumber">
                                 <span>Card Number</span>
@@ -52,8 +49,44 @@
                         </form>
                     </div>
                 </div>
+
                 <h3>COLOUR</h3>
-                <p>Change Colour</p>
+                <div class="details--edit" onclick="showHideColour()">
+                    <p class="details--edit-text">Change Colour</p>
+                </div>
+                <div class="colour--picker" id="cardColours">
+                    <div>
+                        <a href="">
+                            <img src="../img/previews/col-1.png" alt="Colour 1">
+                        </a>
+                        
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="../img/previews/col-2.png" alt="Colour 2">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="../img/previews/col-3.png" alt="Colour 3">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="../img/previews/col-4.png" alt="Colour 4">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="../img/previews/col-5.png" alt="Colour 5">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="../img/previews/col-6.png" alt="Colour 6">
+                        </a>
+                    </div>
+                </div>
             </aside>
 
             <main class="card--design">
