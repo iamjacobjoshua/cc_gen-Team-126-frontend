@@ -1,3 +1,33 @@
+/* THE CARD DETAILS */
+
+var a;
+function showHideDetails() {
+    if (a==0) {
+        document.getElementById("cardDetails").style.display="inline";
+        return a=1;
+    }
+
+    else {
+        document.getElementById("cardDetails").style.display="none";
+        return a=0;
+    }
+}
+
+/* THE CARD COLOURS */
+
+var a;
+function showHideColour() {
+    if (a==0) {
+        document.getElementById("cardColours").style.display="grid";
+        return a=1;
+    }
+
+    else {
+        document.getElementById("cardColours").style.display="none";
+        return a=0;
+    }
+}
+
 /* THE CARD NUMBER */
 
 var numberBox = document.getElementById("numberBox");
