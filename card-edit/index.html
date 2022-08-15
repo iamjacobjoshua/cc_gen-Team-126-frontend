@@ -11,7 +11,7 @@
 <body>
     <header class="page-header">
         <div class="brand-logo">
-            <a href="../welcome.html">
+            <a href="../index.html">
                 <p>Project CC_Gen</p>
             </a>
             <!-- <img src="../Logo.png" alt="Project CC_gen"> -->
@@ -55,42 +55,17 @@
                     <p class="details--edit-text">Change Colour</p>
                 </div>
                 <div class="colour--picker" id="cardColours">
-                    <div>
-                        <a href="">
-                            <img src="../img/previews/col-1.png" alt="Colour 1">
-                        </a>
-                        
-                    </div>
-                    <div>
-                        <a href="">
-                            <img src="../img/previews/col-2.png" alt="Colour 2">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="">
-                            <img src="../img/previews/col-3.png" alt="Colour 3">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="">
-                            <img src="../img/previews/col-4.png" alt="Colour 4">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="">
-                            <img src="../img/previews/col-5.png" alt="Colour 5">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="">
-                            <img src="../img/previews/col-6.png" alt="Colour 6">
-                        </a>
-                    </div>
+                    <div class="color clr1" id="add" onclick="switchColour()"></div>
+                    <div class="color clr2" id="remove" onclick="switchColour()"></div>
+                    <div class="color clr3" id="toggle" onclick="switchColour()"></div>
+                    <div class="color clr4" id="check" onclick="switchColour()"></div>
+                    <div class="color clr5" id="addAll" onclick="switchColour()"></div>
+                    <div class="color clr6" id="removeAll" onclick="switchColour()"></div>
                 </div>
             </aside>
 
             <main class="card--design">
-                <div class="card">
+                <div class="card card--alt" id="card">
                     <div class="credit-card--plate">
                         <img src="../img/card-plate.svg" alt="">
                     </div>
@@ -113,28 +88,6 @@
                         <img src="../img/mcard.svg" alt="Mastercard">
                     </div>
                 </div>
-                <!-- <div class="card">
-                    <div class="credit-card--plate">
-                        <img src="../img/card-plate.svg" alt="">
-                    </div>
-                    <div class="credit-card--fxd">
-                        <img src="../img/credit-card.svg" alt="">
-                    </div>
-                    <div class="credit-card--number" id="prevNumber">
-                        <p>8543 4532 6712 7114</p>
-                    </div>
-                    <div class="credit-card--holder">
-                        <p>CARD HOLDER</p>
-                        <p>JANET SMITH</p>
-                    </div>
-                    <div class="credit-card--expiry">
-                        <p>EXPIRES</p>
-                        <p>10/23</p>
-                    </div>
-                    <div class="credit-card--logo">
-                        <img src="../img/mcard.svg" alt="Mastercard">
-                    </div>
-                </div> -->
                 <div class="cta--btns">
                     <a href="#" class="cta--btn-alt">
                         <img src="../img/download.png" alt="">
@@ -188,9 +141,9 @@
                 </div>
                 <div>
                     <div class="user--interact">
-                        <img src="../img/love.svg" alt="love">
-                        <img src="../img/like.svg" alt="like">
-                        <img src="../img/comment.svg" alt="like">
+                        <a href=""><img src="../img/love.svg" alt="love"></a>
+                        <a href=""><img src="../img/like.svg" alt="like"></a>
+                        <a href="" onclick="commentSection()"><img src="../img/comment.svg" alt="like"></a>
                     </div>                            
                     <div>
                         <div class="user--interact--more">
@@ -215,9 +168,13 @@
                         </div>
                     </div>
                 </div>
+                <div id="commentBox">
+                    <textarea class="comment-box" name="comment-box" id="" cols="30" rows="10">Leave a Comment here...</textarea>
+                </div>
             </aside>
         </div>
     </section>
     
     <script src="../script/card-edit.js"></script>
+</body>
 </html>
