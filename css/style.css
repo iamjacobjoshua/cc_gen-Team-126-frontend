@@ -27,18 +27,20 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 main {
   width: inherit;
   display: flex;
   flex-direction: column;
 }
-.menu-list {
-  display: none;
-}
 .search{
   display: none;
 }
+.menu-list {
+  display: none;
+}
+
 header {
   min-height: 10vh;
   min-width: inherit;
@@ -47,19 +49,7 @@ header {
   align-items: center;
   box-shadow: var(--boxShadow);
 }
-.top-logo{
-  color: var(--purple-700);
-  font-weight: bold;
-  font-size: 24px;
-}
-.bottom-logo{
-  color: var(--pry-col);
-  font-weight: bold;
-  font-size: 24px;
-}
-.ladyimg{
-  width: 80%;
-}
+
 nav {
   min-width: 90%;
   display: flex;
@@ -75,7 +65,63 @@ nav {
 .gen {
   color: var(--pry-col);
 }
-.hmbg,
+.top-logo, .bottom-logo{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.top-logo{
+  color: var(--purple-700);
+}
+.bottom-logo{
+  color: var(--pry-col);
+}
+.hidden{
+  display: none;
+}
+#open-menu, #close-menu {
+  cursor: pointer;
+}
+.mobile-menu{
+  position: absolute;
+  top: 10vh;
+  transform: translateX(-100%);
+  min-height: 90vh;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.9) 33%,
+    rgba(255, 255, 255) 66%,
+    rgba(255, 255, 255) 100%
+  );
+  padding: 1.5rem;
+  touch-action: none;
+  transition: .4s ease-in;
+  
+}
+ .active{
+  transform: translateX(0);
+}
+.mob-menu-list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+  font-weight: bold;
+}
+.mob-menu-list > li > a {
+  color: black;
+  font-family: "Inter", sans-serif;
+}
+#bg-li {
+  background-color: var(--pry-col);
+  padding: 0.75rem 1rem;
+  border-radius: var(--border-rad);
+  box-shadow: var(--boxShadow);
+}
+#bg-li > a {
+  color: var(--white-col);
+}
 a,
 #checkbox,
 button {
@@ -188,13 +234,13 @@ article {
   /*padding: 8px 8px 8px 32px;*/
   text-decoration: none;
   font-size: 1rem;
-  color: #000000;
+  color: #000;
   display: block;
   transition: 0.3s;
 }
 
 @media (min-width: 700px) {
-  .hmbg {
+  #open-menu, .mobile-menu {
     display: none;
   }
   .menu-list, .header-menu {

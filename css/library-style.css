@@ -10,21 +10,6 @@
 html {
   scroll-behavior: smooth;
 }
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', Arial, sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 img{
   max-width: 100%;
 }
@@ -197,48 +182,4 @@ h1 {
 
 .card--info{
   margin-top: 1rem;
-}
-
-/* =================
-  FOOTER SECTION
-  ================ */
-
-.page-footer {
-  padding: 2rem 5.5rem;
-  display: grid;
-  gap: 3rem;
-  grid-template-columns: 2fr repeat(2, 1fr);
-  color: rgb(255, 255, 255);
-  background-color: rgb(61, 9, 51);
-}
-
-.page-footer a {
-  color: rgb(255, 255, 255);
-}
-
-.page-footer img{
-  width: 1.65rem;
-  margin-right: 1rem;
-  color: rgb(255, 255, 255);
-}
-
-.page-footer ul {
-  padding: 0;
-  list-style: none;
-}
-
-.page-footer a,
-.page-footer p {
-  font-size: 0.875rem;
-}
-
-.page-footer--links {
-  line-height: 2.5rem;
-}
-
-.page-footer--copy {
-  margin: 0 auto;
-  padding: 1rem;
-	grid-column: 1 / 4;
-	grid-row: 2;
 }

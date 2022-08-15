@@ -1,3 +1,10 @@
+'use strict'
+function openSideNav(){
+  document.getElementById("mySideNav").style.width = "60%";
+}
+function closeSideNav(){
+  document.getElementById("mySideNav").style.width = "0";
+}
 
 document.getElementById("cc-click").addEventListener("click", function()
 {
