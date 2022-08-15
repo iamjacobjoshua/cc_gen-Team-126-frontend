@@ -5,41 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Page &mdash; Free Credit Card Designs Just for You</title>
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/library-style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-          <div class="logo">
-            <a href="index.html">
-              <span class="proj">Project<br /><span class="gen">cc_gen</span></span>  
+    <header class="page-header">
+        <div class="brand-logo">
+            <a href="welcome.html">
+                <div>Project CC_Gen</div>
+                <!-- <img src="Logo.png" alt="Project CC_gen"> -->
             </a>
-          </div>
-          <span id="open-menu" >&#9776</span>
-          <span id="close-menu" class="hidden">&#10006</span>
-          <ul class="menu-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="library.html">Library</a></li>
-            <li><a href="document.html">Docs</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li id="bg-li"><a href="signup.html">Get started for FREE</a></li>
-          </ul>
-        </nav>
-        <div class="mobile-menu">
-          <ul class="mob-menu-list">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="library.html">Library</a></li>
-              <li><a href="document.html">Docs</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="login.html">Login</a></li>
-              <li id="bg-li"><a href="signup.html">Get started</a></li>
-            </ul>
         </div>
-      </header>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class="page--active" href="library-design.html">Library</a>
+                </li>
+                <li>
+                    <a href="document.html">Documentation</a>
+                </li>
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+                <li>
+                    <a href="signup.html"><button>Get Started for Free</button></a>
+                </li>
+            </ul>
+            <label id="hmbgMenu">
+                <img src="img/menu-alt.svg" alt="">
+            </label>
+        </nav>
+    </header>
+
     <section class="page-teaser">
         <h1>Free Credit Card Designs Just for You</h1>
         <p>Customize and download free credit card designs for your websites, landing page, apps and presentations</p>
@@ -266,50 +269,58 @@
         </div>
     </section>
 
-    <footer>
-        <div class="top-footer">
-          <article id="sect-five">
-            <div class="sf-about">
-              <h2>Project cc_gen</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
-                duis facilisis co nvallis magna elementum nibh. Eu mi mi eu neque
-                tortor fermentum. Aliquam ac nibh cons
-              </p>
-            </div>
-            <div>
-              <a href=""
-                ><img src="img/tweet.svg" alt="socials" class="icon"
-              /></a>
-              <a href=""><img src="img/fb.svg" alt="socials" class="icon" /></a>
-              <a href=""
-                ><img src="img/insta.svg" alt="socials" class="icon"
-              /></a>
-            </div>
-          </article>
-          <article id="sect-six">
-            <div>
-              <h3>Links</h3>
-              <ul class="foot-list">
-                <li><a href="library.html">Designs</a></li>
-                <li><a href="document.html">Docs</a></li>
-                <li><a href="contact.html">Support</a></li>
-                <li><a href="signup.html">Get Started</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3>Others</h3>
-              <ul class="foot-list">
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="">Terms & Conditions</a></li>
-              </ul>
-            </div>
-          </article>
-        </div>
+    <footer class="page-footer">
         <div>
-          <span class="footer-CR">&copy;2022 Project cc_gen. All rights reserved</span>
+            <h2>Project CC Gen</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Tincidunt duis facilisis convallis magna elementum nibh.                
+                Eu mi mi eu neque tortor fermentum. Aliquam ac nibh cons
+            </p>
+            <div>
+                <img src="img/tweet.svg" alt="Twitter">
+                <img src="img/fb.svg" alt="Facebook">
+                <img src="img/insta.svg" alt="Instagram">
+            </div>
         </div>
-      </footer>
-      <script src="script/main.js"></script>  
+        <div class="page-footer--links">
+            <h3>Links</h3>
+            <ul>
+                <li>
+                    <a href="library.html">Design</a>
+                </li>
+                <li>
+                    <a href="document.html">Documentation</a>
+                </li>
+                <li>
+                    <a href="contact.html">Support</a>
+                </li>
+                <li>
+                    <a href="signup.html">Get Started</a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-footer--links">
+            <h3>Others</h3>
+            <ul>
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Terms &amp; Conditions</a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-footer--copy">
+            <small>&copy; 2022 Project CC_gen. All rights reserved</small>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('hmbgMenu').click(funtion(){
+                $('ul').toggleClass('show-bar')
+            })
+        })
+    </script>
 </body>
 </html>
