@@ -53,10 +53,7 @@
   align-self: flex-end;
   background: #3F0A1B;
 }
-/* @media (min-width: 100px) {
-  .btn-group {
-    flex-direction: row; */
-}
+@media (min-width: 700px) {
 
 }
 
