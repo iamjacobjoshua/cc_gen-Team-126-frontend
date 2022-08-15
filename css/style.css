@@ -96,7 +96,7 @@ nav {
   );
   padding: 1.5rem;
   touch-action: none;
-  transition: .6s ease-in-out;
+  transition: .4s ease-in;
   
 }
  .active{
