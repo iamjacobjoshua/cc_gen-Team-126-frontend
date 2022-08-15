@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Page &mdash; Edit Page Here</title>
+    <link rel="stylesheet" href="../css/edit-design.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="brand-logo">
+            <a href="../welcome.html">
+                <p>Project CC_Gen</p>
+            </a>
+            <!-- <img src="../Logo.png" alt="Project CC_gen"> -->
+        </div>
+    </header>
+
+    <section>
+        <div class="page--layout">
+            <aside class="card--details">
+                <h3>CREDIT CARD</h3>
+                <div>
+                    <div class="details--edit" onclick="showHideDetails()">
+                        <p class="details--edit-text">Change Card Details</p>
+                    </div>
+                    <div class="card-details--info" id="cardDetails">
+                        <form action="">
+                            <div class="card--number" id="cardNumber">
+                                <span>Card Number</span>
+                                <input type="text" placeholder="Enter Card Number..." name="card-number" id="numberBox" maxlength="19">
+                            </div>
+                            <div class="card--holder" id="cardHolder">
+                                <span>Card Holder</span>
+                                <input type="text" placeholder="Enter Holder's name..." name="card-name" id="holderName">
+                            </div>
+                            <div class="card--expiry" id="cardExpiry">
+                                <div>
+                                    <span>Expiration mm</span>
+                                    <input type="text" name="card-expiry-month" id="mExpiryTime" maxlength="2">
+                                </div>
+                                <div>
+                                    <span>Expiration yy</span>
+                                    <input type="text" name="card-expiry-year" id="yExpiryTime" maxlength="2">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <h3>COLOUR</h3>
+                <div class="details--edit" onclick="showHideColour()">
+                    <p class="details--edit-text">Change Colour</p>
+                </div>
+                <div class="colour--picker" id="cardColours">
+                    <div>
+                        <a href="">
+                            <img src="../img/previews/col-1.png" alt="Colour 1">
+                        </a>
+                        
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="../img/previews/col-2.png" alt="Colour 2">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="../img/previews/col-3.png" alt="Colour 3">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="../img/previews/col-4.png" alt="Colour 4">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="../img/previews/col-5.png" alt="Colour 5">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="../img/previews/col-6.png" alt="Colour 6">
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="card--design">
+                <div class="card">
+                    <div class="credit-card--plate">
+                        <img src="../img/card-plate.svg" alt="">
+                    </div>
+                    <div class="credit-card--fxd">
+                        <img src="../img/credit-card.svg" alt="">
+                    </div>
+                    <div class="credit-card--number" id="prevNumber"></div>
+                    <div class="credit-card--holder">
+                        <p>CARD HOLDER</p>
+                        <div class="" id="prevName"></div>
+                    </div>
+                    <div class="credit-card--expiry">
+                        <p>EXPIRES</p>
+                        <div class="expiry--value">
+                            <div class="" id="prevMonth"></div>/
+                            <div class="" id="prevYear"></div>
+                        </div>
+                    </div>
+                    <div class="credit-card--logo">
+                        <img src="../img/mcard.svg" alt="Mastercard">
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="credit-card--plate">
+                        <img src="../img/card-plate.svg" alt="">
+                    </div>
+                    <div class="credit-card--fxd">
+                        <img src="../img/credit-card.svg" alt="">
+                    </div>
+                    <div class="credit-card--number" id="prevNumber">
+                        <p>8543 4532 6712 7114</p>
+                    </div>
+                    <div class="credit-card--holder">
+                        <p>CARD HOLDER</p>
+                        <p>JANET SMITH</p>
+                    </div>
+                    <div class="credit-card--expiry">
+                        <p>EXPIRES</p>
+                        <p>10/23</p>
+                    </div>
+                    <div class="credit-card--logo">
+                        <img src="../img/mcard.svg" alt="Mastercard">
+                    </div>
+                </div> -->
+                <div class="cta--btns">
+                    <a href="#" class="cta--btn-alt">
+                        <img src="../img/download.png" alt="">
+                        <button class="action-btn btn1">
+                            Download</button>
+                    </a>
+                    <a href="#" class="cta--btn-alt">
+                        <img src="../img/bracket.png" alt="">
+                        <button class="action-btn btn2">
+                            Embed</button>
+                    </a>
+                    <a href="#" class="cta--btn-alt">
+                        <div>
+                            <img src="../img/share.png" alt=""> 
+                            <button class="action-btn btn3">
+                                Share
+                            </button>
+                            <!-- <div>
+                                <img src="" alt="">
+                                <img src="" alt="">
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+            </main>
+
+            <aside class="card--feedback">
+                <div>
+                    <div class="card--aside">
+                        <div class="credit-card--plate">
+                            <img src="../img/card-plate.svg" alt="">
+                        </div>
+                        <div class="credit-card--fxd">
+                            <img src="../img/credit-card.svg" alt="">
+                        </div>
+                        <div class="credit-card--number">
+                            <p>8543 4532 6712 7114</p>
+                        </div>
+                        <div class="credit-card--holder">
+                            <p>CARD HOLDER</p>
+                            <p>JANET SMITH</p>
+                        </div>
+                        <div class="credit-card--expiry">
+                            <p>EXPIRES</p>
+                            <p>10/23</p>
+                        </div>
+                        <div class="credit-card--logo">
+                            <img src="../img/mcard.svg" alt="Mastercard">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="user--interact">
+                        <img src="../img/love.svg" alt="love">
+                        <img src="../img/like.svg" alt="like">
+                        <img src="../img/comment.svg" alt="like">
+                    </div>                            
+                    <div>
+                        <div class="user--interact--more">
+                            <div class="user--interact--thumb">
+                                <img src="../img/profile-thumb1.png" alt="">
+                            </div>
+                            <div>
+                                <p>Nice Work</p>
+                                <img src="../img/love.svg" alt="">
+                                <p>About 10 hours</p>
+                            </div>
+                        </div>
+                        <div class="user--interact--more">
+                            <div class="user--interact--thumb">
+                                <img src="../img/profile-thumb2.png" alt="">
+                            </div>
+                            <div>
+                                <p>Love this!</p>
+                                <img src="../img/love.svg" alt="">
+                                <p>About 10 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+    
+    <script src="../script/card-edit.js"></script>
+</html>
