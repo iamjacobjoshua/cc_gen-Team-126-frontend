@@ -1,4 +1,4 @@
-/* THE CARD DETAILS */
+/* --Details Visibility-- */
 
 var a;
 function showHideDetails() {
@@ -13,7 +13,7 @@ function showHideDetails() {
     }
 }
 
-/* THE CARD COLOURS */
+/* --Colours Visibility-- */
 
 var a;
 function showHideColour() {
@@ -27,6 +27,35 @@ function showHideColour() {
         return a=0;
     }
 }
+
+/* THE COLOUR INTERACTIVITY */
+
+/* const card = document.querySelector('.card');
+const add = document.querySelector('#add');
+const remove = document.querySelector('#remove');
+const toggle = document.querySelector('#toggle');
+const check = document.querySelector('#check');
+const addAll = document.querySelector('#addAll');
+const removeAll = document.querySelector('#removeAll');
+
+add.addEventListener('click', () => {
+    card.classList.add('clr1');
+}) */
+
+/* var a;
+function switchColour() {
+    if (a==0) {
+        document.getElementById("card").style.backgroundColor="red";
+        return a=1;
+    }
+    
+    else {
+        document.getElementById("card").style.backgroundColor="initial";
+        return a=0;
+    }
+} */
+
+
 
 /* THE CARD NUMBER */
 
@@ -57,3 +86,12 @@ var cardExpiry = document.getElementById("yExpiryTime");
 cardExpiry.onkeyup = cardExpiry.onkeypress = function(){
     document.getElementById("prevYear").innerHTML = this.value;
 }
+
+
+/* colour change */
+
+/* function color(z) {
+    var a = getComputedStyle(z);
+    var b = a.backgroundColor;
+    document.getElementsByTagName("BODY")[0].style.backgroundColor=b;
+} */
