@@ -21,9 +21,13 @@
   font-size: 14px;
   line-height: 2.5rem;
 }
-.dropdown-menu p:focus{
+.dropdown-menu p:hover{
   color: var(--pry-col);
-  
+  cursor: pointer;
+}
+.section1 h5:hover{
+  color: var(--pry-col);
+  cursor: pointer;
 }
 .section2{
   width: 90%;
@@ -38,9 +42,8 @@
 }
 .section2 h4{
   width: 85%;
-  margin: auto;
   padding-bottom: 3rem;
-  font-size: 22px;
+  font-size: 1.75rem;
   color: var(--sec2-col);
 }
 .section3{

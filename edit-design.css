@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+input {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img{
+  max-width: 100%;
+}
+
+/* ====================
+   ** Typography **
+  =================== */
+
+h1 {
+	font-size: 2rem;
+	margin-bottom: 0.35rem;
+}
+
+/* =================
+  HEADER SECTION
+  ================ */
+
+.page-header {
+    background-color: rgb(255, 255, 255);
+}
+
+.brand-logo {
+  width: 8rem;
+  padding: 1rem;
+}
+
+.brand-logo a {
+  color: rgb(189, 30, 81);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.brand-logo p {
+  margin: 0;
+}
+
+/* ====================
+  CARD DESIGN SECTION
+  =================== */
+
+.page--layout {
+  height: auto;
+  padding-top: 1rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgb(238, 233, 237);
+}
+
+.card--details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  grid-column: 1;
+  grid-row: 1;
+  background-color: rgb(255, 255, 255);
+}
+
+.card-details--info {
+  display: none;
+	padding-top: 0.65rem;
+	border-top: 0.185rem rgb(61, 9, 51) solid;
+  transition: all 0.45s ease-in-out;
+}
+
+.card--details h3{
+  color: rgb(61, 9, 51);
+}
+
+.details--edit-text{
+  margin-top: 0;
+  padding: 1rem;
+  border: 0.185rem rgb(61, 9, 51) solid;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: rgb(189, 30, 81);
+  transition: all 0.45s ease-in-out;
+  cursor: pointer;
+}
+
+.details--edit-text:hover {
+  font-weight: 600;
+  border: none;
+  color:rgb(255, 255, 255);
+  background-color: rgb(189, 30, 81);
+}
+
+.card--details span {
+	font-size: 0.85rem;
+	font-weight: 500;
+}
+
+.card--number input,
+.card--holder input,
+.card--expiry input {
+	width: 100%;
+  margin: 0.5rem 0;
+	padding: 0.5rem 1rem;
+  border: none;
+	border-bottom: 0.125rem rgb(61, 9, 51) solid;
+	border-radius: 0.25rem 0.25rem 0 0;
+	font-size: 0.85rem;
+  font-weight: 600;
+	color: rgb(189, 30, 81);
+  background: rgba(242, 212, 221, 0.15)
+}
+
+.card--expiry {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.expiry--value {
+  padding: 0 0.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.colour--picker {
+	margin: 0 auto;
+  padding: 0.5rem 1rem 1rem;
+  display: none;
+	grid-template-columns: repeat(3, 1fr);	
+	gap: 1rem;
+}
+
+.card--design {
+  margin: 5rem 0;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  grid-column: 2 / 4;
+  grid-row: 1;
+}
+
+.cta--btns {
+  margin: 0 auto;
+  padding: 0 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.cta--btns img {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  top: 1rem;
+  left: 0.875rem;
+}
+
+.cta--btn-alt{
+  position: relative;
+}
+
+.action-btn {
+  height: 3rem;
+  padding: 1rem 1rem 1rem 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+
+.btn1 {
+  color: rgb(255, 255, 255);
+  background-color: rgb(189, 30, 81);
+}
+
+.btn2 {
+  color: rgb(255, 255, 255);
+  background-color: rgb(61, 9, 51);
+}
+
+.btn3 {
+  border: 2px rgb(61, 9, 51) solid;
+  color: rgb(61, 9, 51);
+  background-color: rgb(255, 255, 255);
+}
+
+.card--feedback{
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  grid-column: 4 / 5;
+  grid-row: 1;
+}
+
+.card {
+  margin: 6rem auto;
+  width: 21.5rem;
+  height: 12.375rem;
+  position: relative;
+  background : -moz-linear-gradient(-11.47% 109.76% 31.79deg,rgba(78, 124, 172, 1) 0%,rgba(216, 239, 233, 1) 100%);
+  background : -webkit-linear-gradient(31.79deg, rgba(78, 124, 172, 1) 0%, rgba(216, 239, 233, 1) 100%);
+  background : -o-linear-gradient(31.79deg, rgba(78, 124, 172, 1) 0%, rgba(216, 239, 233, 1) 100%);
+  background : -ms-linear-gradient(31.79deg, rgba(78, 124, 172, 1) 0%, rgba(216, 239, 233, 1) 100%);
+  background : linear-gradient(58.21deg, rgba(78, 124, 172, 1) 0%, rgba(216, 239, 233, 1) 100%);
+  border-radius : 0.65rem;
+}
+
+/* ** TEST PURPOSE **
+.card {
+  margin: 6rem auto;
+  width: 21.5rem;
+  height: 12.375rem;
+  position: relative;
+  background: url(../img/previews/mcard4.png);
+  background-size: contain;
+  background-position: 1rem 0;
+  border-radius : 0.65rem;
+} */
+
+.credit-card--fxd {
+  width: 4.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+.credit-card--plate {
+	width: 2.25rem;
+	position: absolute;
+	top: 2.75rem;
+	left: 2rem;
+}
+
+.credit-card--number,
+.credit-card--holder,
+.credit-card--expiry,
+.credit-card--logo {
+  position: absolute;
+  font-family: 'Courier Prime', monospace;
+  font-weight: 700;
+}
+
+.credit-card--number {
+	top: 4.2rem;
+	left: 1.6rem;
+	font-size: 1.6rem;
+}
+
+#prevNumber {
+	top: 5.75rem;
+	font-size: 1.6rem;
+}
+
+.credit-card--holder {
+	bottom: 1.25rem;
+	left: 1.6rem;
+	font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.credit-card--holder p,
+.credit-card--expiry p {
+  margin: 0;
+}
+
+.credit-card--expiry {
+	bottom: 1.25rem;
+	right: 6rem;
+	font-size: 0.7rem;
+}
+
+.credit-card--logo {
+	bottom: 0.8rem;
+	right: 2.25rem;
+	width: 3.15rem;
+}
+
+.card--aside {
+  margin: 6rem auto 2rem;
+  width: 21.5rem;
+  height: 12.375rem;
+  position: relative;
+  background : -moz-linear-gradient(-11.47% 109.76% 31.79deg,rgba(78, 124, 172, 1) 0%,rgba(216, 239, 233, 1) 100%);
+  background : -webkit-linear-gradient(31.79deg, rgba(78, 124, 172, 1) 0%, rgba(216, 239, 233, 1) 100%);
+  background : -o-linear-gradient(31.79deg, rgba(78, 124, 172, 1) 0%, rgba(216, 239, 233, 1) 100%);
+  background : -ms-linear-gradient(31.79deg, rgba(78, 124, 172, 1) 0%, rgba(216, 239, 233, 1) 100%);
+  background : linear-gradient(58.21deg, rgba(78, 124, 172, 1) 0%, rgba(216, 239, 233, 1) 100%);
+  border-radius : 0.65rem;
+}
+
+.user--interact {
+  margin: 0 auto 2rem;
+  padding: 1rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  border: 0.185rem rgb(61, 9, 51) solid;
+  border-radius: 0.65rem;
+}
+
+.user--interact--more {
+  margin: 0 0 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.user--interact--more img {
+  width: 1.5rem;
+}
+
+.user--interact--more p {
+  margin: 0 0 0.5rem;
+}
+
+.user--interact--more p:last-child {
+  margin: 0.25rem 0 0.5rem;
+  font-size: 0.75rem;
+}
+
+.user--interact img {
+  width: 1.75rem;
+}
+
+.user--interact--thumb {
+  width: 1.75rem;
+}
+
+.user--interact--react {
+  width: 1.75rem;
+}
+
+.user--interact--time {
+  width: 1.75rem;
+}
+
+
+.colour--pick img {
+	margin: -0.1rem 1rem;
+	width: 1.65rem;
+	height: 1.65rem;
+}
