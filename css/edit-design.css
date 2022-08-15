@@ -7,18 +7,20 @@
           box-sizing: border-box;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body,
-input {
+input, textarea {
   font-family: 'Montserrat', Arial, sans-serif;
-}
-
-a {
-  text-decoration: none;
 }
 
 a:hover {
@@ -27,7 +29,7 @@ a:hover {
 
 img{
   max-width: 100%;
-}
+} */
 
 /* ====================
    ** Typography **
@@ -92,6 +94,7 @@ h1 {
 }
 
 .card--details h3{
+  margin: 1rem 0;
   color: rgb(61, 9, 51);
 }
 
@@ -146,16 +149,63 @@ h1 {
 }
 
 .colour--picker {
-	margin: 0 auto;
+	margin: 0.5rem auto 0;
   padding: 0.5rem 1rem 1rem;
   display: none;
 	grid-template-columns: repeat(3, 1fr);	
 	gap: 1rem;
 }
 
+.color {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.clr1 {
+  background : -moz-linear-gradient(50% 100% 90deg,rgba(221, 219, 224, 1) 0%,rgba(196, 158, 182, 1) 100%);
+  background : -webkit-linear-gradient(90deg, rgba(221, 219, 224, 1) 0%, rgba(196, 158, 182, 1) 100%);
+  background : -webkit-gradient(linear,50% 100% ,50% 0% ,color-stop(0,rgba(221, 219, 224, 1) ),color-stop(1,rgba(196, 158, 182, 1) ));
+  background : -ms-linear-gradient(90deg, rgba(221, 219, 224, 1) 0%, rgba(196, 158, 182, 1) 100%);
+  background : linear-gradient(0deg, rgba(221, 219, 224, 1) 0%, rgba(196, 158, 182, 1) 100%);
+}
+
+.clr2 {
+  background : -moz-linear-gradient(50% 100% 90deg,rgba(216, 215, 248, 1) 0%,rgba(152, 179, 228, 1) 50%,rgba(144, 217, 198, 1) 100%);
+  background : -webkit-linear-gradient(90deg, rgba(216, 215, 248, 1) 0%, rgba(152, 179, 228, 1) 50%, rgba(144, 217, 198, 1) 100%);
+  background : -webkit-gradient(linear,50% 100% ,50% 0% ,color-stop(0,rgba(216, 215, 248, 1) ),color-stop(0.5,rgba(152, 179, 228, 1) ),color-stop(1,rgba(144, 217, 198, 1) ));
+  background : -ms-linear-gradient(90deg, rgba(216, 215, 248, 1) 0%, rgba(152, 179, 228, 1) 50%, rgba(144, 217, 198, 1) 100%);
+  background : linear-gradient(0deg, rgba(216, 215, 248, 1) 0%, rgba(152, 179, 228, 1) 50%, rgba(144, 217, 198, 1) 100%);
+}
+
+.clr3 {
+  background : rgba(0, 132, 255, 1);
+}
+
+.clr4{
+  background : rgba(247, 158, 27, 1);
+}
+
+.clr5 {
+  background : -moz-linear-gradient(50% 100% 90deg,rgba(227, 241, 225, 1) 0%,rgba(139, 204, 126, 1) 100%);
+  background : -webkit-linear-gradient(90deg, rgba(227, 241, 225, 1) 0%, rgba(139, 204, 126, 1) 100%);
+  background : -webkit-gradient(linear,50% 100% ,50% 0% ,color-stop(0,rgba(227, 241, 225, 1) ),color-stop(1,rgba(139, 204, 126, 1) ));
+  background : -ms-linear-gradient(90deg, rgba(227, 241, 225, 1) 0%, rgba(139, 204, 126, 1) 100%);
+  background : linear-gradient(0deg, rgba(227, 241, 225, 1) 0%, rgba(139, 204, 126, 1) 100%);
+}
+
+.clr6 {
+  background : -moz-linear-gradient(50% 100% 90deg,rgba(134, 121, 116, 1) 0%,rgba(187, 85, 56, 1) 100%);
+  background : -webkit-linear-gradient(90deg, rgba(134, 121, 116, 1) 0%, rgba(187, 85, 56, 1) 100%);
+  background : -webkit-gradient(linear,50% 100% ,50% 0% ,color-stop(0,rgba(134, 121, 116, 1) ),color-stop(1,rgba(187, 85, 56, 1) ));
+  background : -ms-linear-gradient(90deg, rgba(134, 121, 116, 1) 0%, rgba(187, 85, 56, 1) 100%);
+  background : linear-gradient(0deg, rgba(134, 121, 116, 1) 0%, rgba(187, 85, 56, 1) 100%);
+}
+
 .card--design {
   margin: 5rem 0;
-  padding: 2.5rem 2rem;
+  padding: 2.5rem 1.5rem;
   display: flex;
   flex-direction: column;
   background-color: rgb(255, 255, 255);
@@ -163,8 +213,81 @@ h1 {
   grid-row: 1;
 }
 
-.cta--btns {
+.card {
   margin: 0 auto;
+  width: 21.5rem;
+  height: 12.375rem;
+  position: relative;
+  border-radius : 0.65rem;
+}
+
+.card--alt {
+  background : -moz-linear-gradient(-11.47% 109.76% 31.79deg,rgba(78, 124, 172, 1) 0%,rgba(216, 239, 233, 1) 100%);
+  background : -webkit-linear-gradient(31.79deg, rgba(78, 124, 172, 1) 0%, rgba(216, 239, 233, 1) 100%);
+  background : -ms-linear-gradient(31.79deg, rgba(78, 124, 172, 1) 0%, rgba(216, 239, 233, 1) 100%);
+  background : linear-gradient(58.21deg, rgba(78, 124, 172, 1) 0%, rgba(216, 239, 233, 1) 100%);
+}
+
+.credit-card--fxd {
+  width: 4.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+.credit-card--plate {
+	width: 2.25rem;
+	position: absolute;
+	top: 2.75rem;
+	left: 2rem;
+}
+
+.credit-card--number,
+.credit-card--holder,
+.credit-card--expiry,
+.credit-card--logo {
+  position: absolute;
+  font-family: 'Courier Prime', monospace;
+  font-weight: 700;
+}
+
+.credit-card--number {
+	margin: 1.6rem 0;
+  top: 4.2rem;
+	left: 1.6rem;
+	font-size: 1.6rem;
+}
+
+#prevNumber {
+	font-size: 1.6rem;
+}
+
+.credit-card--holder {
+	bottom: 1.25rem;
+	left: 1.6rem;
+	font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.credit-card--holder p,
+.credit-card--expiry p {
+  margin: 0;
+}
+
+.credit-card--expiry {
+	bottom: 1.25rem;
+	right: 6rem;
+	font-size: 0.7rem;
+}
+
+.credit-card--logo {
+	bottom: 0.8rem;
+	right: 2.25rem;
+	width: 3.15rem;
+}
+
+.cta--btns {
+  margin: 6rem auto;
   padding: 0 4rem;
   display: flex;
   justify-content: space-between;
@@ -218,89 +341,6 @@ h1 {
   grid-row: 1;
 }
 
-.card {
-  margin: 6rem auto;
-  width: 21.5rem;
-  height: 12.375rem;
-  position: relative;
-  background : -moz-linear-gradient(-11.47% 109.76% 31.79deg,rgba(78, 124, 172, 1) 0%,rgba(216, 239, 233, 1) 100%);
-  background : -webkit-linear-gradient(31.79deg, rgba(78, 124, 172, 1) 0%, rgba(216, 239, 233, 1) 100%);
-  background : -o-linear-gradient(31.79deg, rgba(78, 124, 172, 1) 0%, rgba(216, 239, 233, 1) 100%);
-  background : -ms-linear-gradient(31.79deg, rgba(78, 124, 172, 1) 0%, rgba(216, 239, 233, 1) 100%);
-  background : linear-gradient(58.21deg, rgba(78, 124, 172, 1) 0%, rgba(216, 239, 233, 1) 100%);
-  border-radius : 0.65rem;
-}
-
-/* ** TEST PURPOSE **
-.card {
-  margin: 6rem auto;
-  width: 21.5rem;
-  height: 12.375rem;
-  position: relative;
-  background: url(../img/previews/mcard4.png);
-  background-size: contain;
-  background-position: 1rem 0;
-  border-radius : 0.65rem;
-} */
-
-.credit-card--fxd {
-  width: 4.5rem;
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
-}
-
-.credit-card--plate {
-	width: 2.25rem;
-	position: absolute;
-	top: 2.75rem;
-	left: 2rem;
-}
-
-.credit-card--number,
-.credit-card--holder,
-.credit-card--expiry,
-.credit-card--logo {
-  position: absolute;
-  font-family: 'Courier Prime', monospace;
-  font-weight: 700;
-}
-
-.credit-card--number {
-	top: 4.2rem;
-	left: 1.6rem;
-	font-size: 1.6rem;
-}
-
-#prevNumber {
-	top: 5.75rem;
-	font-size: 1.6rem;
-}
-
-.credit-card--holder {
-	bottom: 1.25rem;
-	left: 1.6rem;
-	font-size: 0.7rem;
-  text-transform: uppercase;
-}
-
-.credit-card--holder p,
-.credit-card--expiry p {
-  margin: 0;
-}
-
-.credit-card--expiry {
-	bottom: 1.25rem;
-	right: 6rem;
-	font-size: 0.7rem;
-}
-
-.credit-card--logo {
-	bottom: 0.8rem;
-	right: 2.25rem;
-	width: 3.15rem;
-}
-
 .card--aside {
   margin: 6rem auto 2rem;
   width: 21.5rem;
@@ -314,10 +354,11 @@ h1 {
   border-radius : 0.65rem;
 }
 
+
 .user--interact {
   margin: 0 auto 2rem;
   padding: 1rem;
-  width: 90%;
+  width: 17rem;
   display: flex;
   justify-content: space-between;
   border: 0.185rem rgb(61, 9, 51) solid;
@@ -359,9 +400,84 @@ h1 {
   width: 1.75rem;
 }
 
+.comment-box {
+	margin-top: 4rem;
+  padding: 1rem;
+  width: 100%;
+	border: none;
+  border-radius: 0.75rem;
+  font-size: 0.857rem;
+	background: rgba(242, 212, 221, 0.15);
+}
 
-.colour--pick img {
-	margin: -0.1rem 1rem;
-	width: 1.65rem;
-	height: 1.65rem;
+/* @media only screen and (max-width: 480px) {
+} */
+
+/* ========================
+  IPADS & TABLETS
+  (481px - 768px)
+========================*/
+
+/* ========================
+  SMALL SCREENs, LAPTOPS
+  (769px - 1024px)
+========================*/
+
+/* ========================
+  DESKTOPS, LARGE SCREENS
+  (1025px - 1200px)
+========================*/
+
+/* ========================
+  MOBILE DEVICES
+  (320px - 480px)
+========================*/
+
+@media only screen and (max-width: 1028px) {
+
+  .page--layout {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .card--details{
+    margin: 1rem;
+    align-items: center;
+    border-radius: 0.675rem;
+  }
+
+  .card--expiry input {
+    width: 78%;
+  }
+
+  .card--design {
+    margin: 5rem 0;
+    padding: 1rem;
+  }
+  
+  .card {
+    margin-top: 1rem;
+    width: 21.5rem;
+    height: 12.375rem;
+  }
+
+  #prevNumber {
+    font-size: 1.44rem;
+  }
+
+  .cta--btns {
+    margin-top: 3rem;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .action-btn {
+    width: 100%;
+  }
+
+  .cta--btn-alt:last-child {
+    grid-column: 1 / 3;
+  }
 }
