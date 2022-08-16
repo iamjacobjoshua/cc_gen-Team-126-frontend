@@ -96,7 +96,7 @@ label {
 }
 input {
   border: solid .1rem var(--faded-pink);
-  background: var(--faded-pink);
+  /* background: var(--faded-pink); */
   padding: 0.75rem;
   border-radius: var(--border-rad);
 }
