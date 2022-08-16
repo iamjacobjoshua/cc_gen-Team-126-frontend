@@ -1,154 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <title>Team_126</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <a href="index.html">
-            <span class="proj">Project<br /><span class="gen">cc_gen</span></span>  
-          </a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Page &mdash; Edit Page Here</title>
+    <link rel="stylesheet" href="../css/edit-design.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="brand-logo">
+            <a href="../index.html">
+                <p>Project CC_Gen</p>
+            </a>
+            <!-- <img src="../Logo.png" alt="Project CC_gen"> -->
         </div>
-        <span id="open-menu" >&#9776</span>
-        <span id="close-menu" class="hidden">&#10006</span>
-        <ul class="menu-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="library.html">Library</a></li>
-          <li><a href="document.html">Docs</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="login.html">Login</a></li>
-          <li id="bg-li"><a href="signup.html">Get started for FREE</a></li>
-        </ul>
-      </nav>
-      <div class="mobile-menu">
-        <ul class="mob-menu-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="library.html">Library</a></li>
-            <li><a href="document.html">Docs</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li id="bg-li"><a href="signup.html">Get started</a></li>
-          </ul>
-      </div>
     </header>
-    <main>
-      <div class="hero">
-        <section id="sect-one">
-          <div>
-            <h1>
-              Customizable credit cards for
-              <span id="ox-col-txt">Virtual payments across the Internet</span>
-            </h1>
-            <p>
-              Access varieties of credit card designs at the tip of your finger
-              for virtual payments and integrations.
-            </p>
-            <button>Start Now</button>
-          </div>
-          <img src="img/card.svg" alt="credit card design" class="hero-img" />
-        </section>
-      </div>
 
-      <div class="page-content">
-        <section id="sect-two">
-          <div>
-            <h2>Work Faster and Smarter</h2>
-            <p>
-              Why go through the hassle of designing credit cards for your
-              websites and applications, when you can gain access to a library
-              of designs for easy usage? <br />
-              CC Gen's products give you access to pre-built credit card designs
-              for easy integration into your websites or apps.
-            </p>
-            <button>Start Now</button>
-          </div>
-          <img src="img/card-select.svg" alt="illustration" class="svg-img" />
-        </section>
-      </div>
+    <section>
+        <div class="page--layout">
+            <aside class="card--details">
+                <h3>CREDIT CARD</h3>
+                <div>
+                    <div class="details--edit" onclick="showHideDetails()">
+                        <p class="details--edit-text">Change Card Details</p>
+                    </div>
+                    <div class="card-details--info" id="cardDetails">
+                        <form action="">
+                            <div class="card--number" id="cardNumber">
+                                <span>Card Number</span>
+                                <input type="text" placeholder="Enter Card Number..." name="card-number" id="numberBox" maxlength="19">
+                            </div>
+                            <div class="card--holder" id="cardHolder">
+                                <span>Card Holder</span>
+                                <input type="text" placeholder="Enter Holder's name..." name="card-name" id="holderName">
+                            </div>
+                            <div class="card--expiry" id="cardExpiry">
+                                <div>
+                                    <span>Expiration mm</span>
+                                    <input type="text" name="card-expiry-month" id="mExpiryTime" maxlength="2">
+                                </div>
+                                <div>
+                                    <span>Expiration yy</span>
+                                    <input type="text" name="card-expiry-year" id="yExpiryTime" maxlength="2">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
 
-      <div class="page-content sect-three">
-        <section id="sect-three">
-          <div>
-            <h2>Your Benefits</h2>
-            <p>
-              With unlimited access to designs, browse and download the very
-              best credit cards for virtual payments across the internet. Get to
-              customize your credit cards with just one tap and save your
-              designs to download later. Also get to share your favourite
-              designs across the internet.
-            </p>
-          </div>
-          <img src="img/Wallet.png" alt="illustration" class="home-img" />
-        </section>
-      </div>
+                <h3>COLOUR</h3>
+                <div class="details--edit" onclick="showHideColour()">
+                    <p class="details--edit-text">Change Colour</p>
+                </div>
+                <div class="colour--picker" id="cardColours">
+                    <div class="color clr1" id="add" onclick="switchColour()"></div>
+                    <div class="color clr2" id="remove" onclick="switchColour()"></div>
+                    <div class="color clr3" id="toggle" onclick="switchColour()"></div>
+                    <div class="color clr4" id="check" onclick="switchColour()"></div>
+                    <div class="color clr5" id="addAll" onclick="switchColour()"></div>
+                    <div class="color clr6" id="removeAll" onclick="switchColour()"></div>
+                </div>
+            </aside>
 
-      <div class="page-content">
-        <section id="sect-four">
-          <div>
-            <h2>Why Us?</h2>
-            <p>
-              Beyond designs, we create an experience. With a library of unique
-              credit card designs, you can explore and customize designs to
-              suite your colour preferences. With Project cc_gen, you enjoy free
-              access to designs and card code samples as a registered user at no
-              cost.
-            </p>
-          </div>
-          <img src="img/ACS.png" alt="illustration" class="home-img" />
-        </section>
-      </div>
-    </main>
-    <footer>
-      <div class="top-footer">
-        <article id="sect-five">
-          <div class="sf-about">
-            <h2>Project cc_gen</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
-              duis facilisis co nvallis magna elementum nibh. Eu mi mi eu neque
-              tortor fermentum. Aliquam ac nibh cons
-            </p>
-          </div>
-          <div>
-            <a href=""
-              ><img src="img/tweet.svg" alt="socials" class="icon"
-            /></a>
-            <a href=""><img src="img/fb.svg" alt="socials" class="icon" /></a>
-            <a href=""
-              ><img src="img/insta.svg" alt="socials" class="icon"
-            /></a>
-          </div>
-        </article>
-        <article id="sect-six">
-          <div>
-            <h3>Links</h3>
-            <ul class="foot-list">
-              <li><a href="library.html">Designs</a></li>
-              <li><a href="document.html">Docs</a></li>
-              <li><a href="contact.html">Support</a></li>
-              <li><a href="signup.html">Get Started</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Others</h3>
-            <ul class="foot-list">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="">Terms & Conditions</a></li>
-            </ul>
-          </div>
-        </article>
-      </div>
-      <div>
-        <span class="footer-CR">&copy;2022 Project cc_gen. All rights reserved</span>
-      </div>
-    </footer>
-    <script src="script/main.js"></script>
-  </body>
+            <main class="card--design">
+                <div class="card card--alt" id="card">
+                    <div class="credit-card--plate">
+                        <img src="../img/card-plate.svg" alt="">
+                    </div>
+                    <div class="credit-card--fxd">
+                        <img src="../img/credit-card.svg" alt="">
+                    </div>
+                    <div class="credit-card--number" id="prevNumber"></div>
+                    <div class="credit-card--holder">
+                        <p>CARD HOLDER</p>
+                        <div class="" id="prevName"></div>
+                    </div>
+                    <div class="credit-card--expiry">
+                        <p>EXPIRES</p>
+                        <div class="expiry--value">
+                            <div class="" id="prevMonth"></div>/
+                            <div class="" id="prevYear"></div>
+                        </div>
+                    </div>
+                    <div class="credit-card--logo">
+                        <img src="../img/mcard.svg" alt="Mastercard">
+                    </div>
+                </div>
+                <div class="cta--btns">
+                    <a href="#" class="cta--btn-alt">
+                        <img src="../img/download.png" alt="">
+                        <button class="action-btn btn1">
+                            Download</button>
+                    </a>
+                    <a href="#" class="cta--btn-alt">
+                        <img src="../img/bracket.png" alt="">
+                        <button class="action-btn btn2">
+                            Embed</button>
+                    </a>
+                    <a href="#" class="cta--btn-alt">
+                        <div>
+                            <img src="../img/share.png" alt=""> 
+                            <button class="action-btn btn3">
+                                Share
+                            </button>
+                            <!-- <div>
+                                <img src="" alt="">
+                                <img src="" alt="">
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+            </main>
+
+            <aside class="card--feedback">
+                <div>
+                    <div class="card--aside">
+                        <div class="credit-card--plate">
+                            <img src="../img/card-plate.svg" alt="">
+                        </div>
+                        <div class="credit-card--fxd">
+                            <img src="../img/credit-card.svg" alt="">
+                        </div>
+                        <div class="credit-card--number">
+                            <p>8543 4532 6712 7114</p>
+                        </div>
+                        <div class="credit-card--holder">
+                            <p>CARD HOLDER</p>
+                            <p>JANET SMITH</p>
+                        </div>
+                        <div class="credit-card--expiry">
+                            <p>EXPIRES</p>
+                            <p>10/23</p>
+                        </div>
+                        <div class="credit-card--logo">
+                            <img src="../img/mcard.svg" alt="Mastercard">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="user--interact">
+                        <a href=""><img src="../img/love.svg" alt="love"></a>
+                        <a href=""><img src="../img/like.svg" alt="like"></a>
+                        <a href="" onclick="commentSection()"><img src="../img/comment.svg" alt="like"></a>
+                    </div>                            
+                    <div>
+                        <div class="user--interact--more">
+                            <div class="user--interact--thumb">
+                                <img src="../img/profile-thumb1.png" alt="">
+                            </div>
+                            <div>
+                                <p>Nice Work</p>
+                                <img src="../img/love.svg" alt="">
+                                <p>About 10 hours</p>
+                            </div>
+                        </div>
+                        <div class="user--interact--more">
+                            <div class="user--interact--thumb">
+                                <img src="../img/profile-thumb2.png" alt="">
+                            </div>
+                            <div>
+                                <p>Love this!</p>
+                                <img src="../img/love.svg" alt="">
+                                <p>About 10 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="commentBox">
+                    <textarea class="comment-box" name="comment-box" id="" cols="30" rows="10">Leave a Comment here...</textarea>
+                </div>
+            </aside>
+        </div>
+    </section>
+    
+    <script src="../script/card-edit.js"></script>
+</body>
 </html>
