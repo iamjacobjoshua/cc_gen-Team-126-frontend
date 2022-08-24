@@ -21,11 +21,6 @@ html {
 body {
   font-family: 'Montserrat', Arial, sans-serif;
 }
-
-a:hover {
-  text-decoration: underline;
-}
-
 img{
   max-width: 100%;
 }
