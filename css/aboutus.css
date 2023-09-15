@@ -69,11 +69,3 @@ article > div > h2 {
 .about p {
   padding: 50px 100px 90px 0px;
 }
-button .about-button {
-  background-color: var(--pry-col);
-  padding: 10px 15px;
-  border: none;
-  border-radius: var(--border-rad);
-  color: var(--white-col);
-  box-shadow: var(--boxShadow);
-}
